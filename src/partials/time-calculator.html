@@ -1,9 +1,16 @@
-<section>
+<section class="time-calculator">
     <div class="line"></div>
-    <h2>Калькулятор часу</h2>
+    <h3>Калькулятор часу</h3>
     <div class="time-calculator-block">
-        <input type="text">
-        <div></div>
-        <p class="time-counter"></p>
+        <div class="time-calculator-input-block">
+            <input type="number" placeholder="Введіть число" id="counter">
+            <button id="update-btn">
+                <svg>
+                    <use href="./symbol-defs.svg#magnifying-glass"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="time-calculator-line"></div>
+        <p id="time-counter">0дн. 00:00</p>
     </div>
 </section>

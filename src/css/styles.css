@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./time-calculator.css');
 
 
 :root {
@@ -45,6 +46,24 @@ section {
   margin-top: 36px;
 }
 
-h1 {
+h2 {
   text-align: center;
+}
+
+section h3 {
+  margin-bottom: 36px;
+}
+
+input::placeholder {
+    font-family: "Montserrat Alternates";
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
