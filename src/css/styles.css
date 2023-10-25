@@ -42,10 +42,10 @@
 }
 
 .container {
+  background-color: white;
   box-sizing: border-box;
   width: 1090px;
   margin: auto;
-  outline: 1px red solid;
   padding: 36px 92px;
 }
 
@@ -76,4 +76,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+main {
+  background-color: #EEE;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  
 }
