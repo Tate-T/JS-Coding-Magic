@@ -48,7 +48,9 @@
 <symbol id="vector-3" viewBox="0 0 12 32">
 <path fill="#8acecf" style="fill: var(--color3, #8acecf)" d="M6.715 12.878c-7.591-2.979-2.928-7.852-5.639-11.643-0.344-0.481-0.703-0.885-1.075-1.218v31.981c3.494-2.472 7.29-6.872 9.1-8.559 3.253-3.033 5.205-7.582-2.386-10.56z"></path>
 </symbol>
-
+<symbol id="mouse">
+<path d="M11.7279 20.2132L3.24264 3.24259L20.2132 11.7279L13.1809 13.1808L11.7279 20.2132Z" fill="black" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+</symbol>
 
 
 </defs>
