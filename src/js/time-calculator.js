@@ -22,6 +22,18 @@ updateBtn.addEventListener("click", () => {
         output.style.color = "black";
         output.textContent = `0дн. 00:00`;
     }
+    else if(hours <= 9 && min <= 9){
+        output.style.color = "black";
+        output.textContent = `${days}дн. 0${hours}:0${min}`;
+    }
+    else if(hours <= 9){
+        output.style.color = "black";
+        output.textContent = `${days}дн. 0${hours}:${min}`;
+    }
+    else if(min <= 9){
+        output.style.color = "black";
+        output.textContent = `${days}дн. ${hours}:0${min}`;
+    }
     else {
         output.style.color = "black";
         output.textContent = `${days}дн. ${hours}:${min}`;
