@@ -15,7 +15,7 @@
 @import url('./football.css');
 /* max-number */
 /* our-team */
-/* choose-scientist */
+@import url('./choose-scientist.css');
 /* footer */
 
 :root {
@@ -46,7 +46,7 @@
   box-sizing: border-box;
   width: 1090px;
   margin: auto;
-  padding: 36px 92px;
+  padding: 36px 0px;
 }
 
 section {
@@ -83,4 +83,8 @@ main {
   background-image: url("../img/background.png");
   background-size: cover;
   
+}
+
+body {
+  margin: 8px 0px;
 }
