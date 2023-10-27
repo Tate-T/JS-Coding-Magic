@@ -15,6 +15,11 @@
 .number-quest-block{
     display: flex;
 }
+.number-quest-input-block{
+    display: flex;
+    
+}
+
 
 .number-quest-input-block button {
     display: flex;

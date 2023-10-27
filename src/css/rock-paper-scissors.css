@@ -1,0 +1,38 @@
+.roock-paper-scissors-block button svg {
+    width: 20px;
+    height: 20px;
+    stroke: white;
+}
+
+.section-roock-paper-scissors{
+    display: flex;
+}
+
+.roock-paper-scissors-block{
+    display: flex;
+}
+
+.roock-paper-scissors-block button {
+    display: flex;
+    width: 38.7px;
+    height: 38.7px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #000;
+    border-color: transparent;
+}
+
+
+
+.update-btn-roock-paper-scissors{
+    display: flex;
+}
+
+
+
+
+
+
+
+
