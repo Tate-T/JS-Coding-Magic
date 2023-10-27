@@ -7,7 +7,7 @@
 @import url('./reset.css');
 /* header */
 /* check-year */
-/* quess-number */
+@import url('./quess-number.css');
 /* rock-paper-scissors */
 /* calculator */
 @import url('./time-calculator.css');
