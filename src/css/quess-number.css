@@ -46,7 +46,16 @@
 #number-counter {
     margin-top: 10px;
     display: flex;
+
 }
 
+.win{
+    color:  #039900;
+    
+}
 
+.loose{
+    color:  #990000;
+
+}
 
