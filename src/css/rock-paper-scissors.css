@@ -1,38 +1,82 @@
-.roock-paper-scissors-block button svg {
-    width: 20px;
-    height: 20px;
-    stroke: white;
+
+
+.section-roock-paper-scissors {
+    display: flex;
+    width: 100%;
 }
 
-.section-roock-paper-scissors{
-    display: flex;
+.rock-papirus-sosikarios-text-win-loose-div {
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+
 }
 
-.roock-paper-scissors-block{
+.roock-paper-scissors-block {
     display: flex;
+    justify-content: center;
+    margin-left: 417px;
+    gap: 38px;
 }
 
 .roock-paper-scissors-block button {
+
     display: flex;
-    width: 38.7px;
-    height: 38.7px;
+    width: 60px;
+    height: 60px;
     align-items: center;
     justify-content: center;
-    border-radius: 3px 3px 3px 3px;
     background-color: #000;
     border-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.comp-btn-roock-paper-scissors {
+    /* display: block;
+    width: 182px;
+    height: 35px;
+    padding: 10px, 20px, 10px, 20px;
+    border-radius: 20px 20px 20px 20px;
+    gap: 10px;
+    background-color: #000;
+    color: white;
+    font-family: "Montserrat Alternates"; */
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-color: transparent;
+    border-radius: 20px 20px 20px 20px;
 }
 
 
 
-.update-btn-roock-paper-scissors{
+.rock-papirus-sosikarios-text {
+    margin-left: 104px;
+}
+
+.update-btn-roock-paper-scissors {
     display: flex;
 }
 
+.button-img-upd{
+    justify-content: center;
+}
 
 
+.win{
+    color:  #039900;
+    
+}
 
+.loose{
+    color:  #990000;
 
+}
 
-
+.nokoko{
+    color:  #9900ff;
+}
 
