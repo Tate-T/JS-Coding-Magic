@@ -15,6 +15,11 @@
 .number-quest-block{
     display: flex;
 }
+.number-quest-input-block{
+    display: flex;
+    
+}
+
 
 .number-quest-input-block button {
     display: flex;
@@ -46,7 +51,16 @@
 #number-counter {
     margin-top: 10px;
     display: flex;
+
 }
 
+.win{
+    color:  #039900;
+    
+}
 
+.loose{
+    color:  #990000;
+
+}
 

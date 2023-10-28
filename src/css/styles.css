@@ -8,7 +8,7 @@
 /* header */
 /* check-year */
 @import url('./quess-number.css');
-/* rock-paper-scissors */
+@import url('./rock-paper-scissors.css');
 /* calculator */
 @import url('./time-calculator.css');
 /* dinosaur */
