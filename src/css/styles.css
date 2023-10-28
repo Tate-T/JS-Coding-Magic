@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 /* header */
+@import url('./header.css');
 /* check-year */
 @import url('./quess-number.css');
 @import url('./rock-paper-scissors.css');
@@ -17,6 +18,7 @@
 /* our-team */
 @import url('./choose-scientist.css');
 /* footer */
+@import url('./footer.css');
 
 :root {
   font-family: "Montserrat Alternates";

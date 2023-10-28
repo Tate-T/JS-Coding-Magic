@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    margin-left: 100px;
+}
+
+/* logo */
+
+.header__logo--icon {
+    width: 93px;
+    height: 38px;
+}
+
+.header__logo {
+    margin-top: 21px;
+    margin-bottom: 20px;
+    margin-left: 175px;
+}
+
+/* navigation */
+
+.header__item-page {
+    color: #000;
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__list-item {
+    margin-left: 50px;
+}
+
+.header__item-btn {
+    width: 5px;
+    height: 9px;
+}
+
+.header__open--icon {
+    width: 5px;
+    height: 9px;
+}
+
+.header__navigation {
+    display: flex;
+}
+
+.header-list {
+    display: flex;
+    margin-left: 81px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+/* hiUser */
+
+.header__hiUser-text {
+    color: #000;
+    text-align: right;
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-hiUser {
+    margin-top: 30px;
+    margin-left: 361px;
+    display: flex;
+    margin-bottom: 32px;
+
+}
+
+.header-hiUser-btn {
+    margin-right: 51px;
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 11px;
+    background: #7A7A7A;
+}
+
+
+.icon-header-moon {
+    display: none;
+}
