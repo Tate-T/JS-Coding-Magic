@@ -1,6 +1,6 @@
 const rockButton = document.querySelector("#update-btn-roock-paper-scissors1");
-const papirButton = document.querySelector("#update-btn-roock-paper-scissors2");
-const sosikaliusButton = document.querySelector("#update-btn-roock-paper-scissors3");
+const papirButton = document.querySelector("#update-btn-roock-paper-scissors3");
+const sosikaliusButton = document.querySelector("#update-btn-roock-paper-scissors2");
 const text = document.querySelector("#text");
 const buttonText = document.querySelector("#button");
 const compWinText = document.querySelector("#comp-win-conteiner");
@@ -43,7 +43,7 @@ if (random === "ножниці") {
         text.classList.add("win")
         text.classList.remove("loose")
         text.classList.remove("nokoko")
-        userWin = compWin + 1;
+        userWin = userWin + 1;
         userWinText.textContent = `Ви - ${userWin}`
     } else {
         text.textContent = "Програв"
@@ -88,7 +88,7 @@ if (random === "папір") {
         text.classList.add("win")
         text.classList.remove("loose")
         text.classList.remove("nokoko")
-        userWin = compWin + 1;
+        userWin = userWin + 1;
         userWinText.textContent = `Ви - ${userWin}`
     } else {
         text.textContent = "Програв"
@@ -134,7 +134,7 @@ if (random === "камінь") {
         text.classList.add("win")
         text.classList.remove("loose")
         text.classList.remove("nokoko")
-        userWin = compWin + 1;
+        userWin = userWin + 1;
         userWinText.textContent = `Ви - ${userWin}`
     } else {
         text.textContent = "Програв"
