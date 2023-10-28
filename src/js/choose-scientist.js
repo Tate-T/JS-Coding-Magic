@@ -88,143 +88,230 @@ const scientists = [
 const filters = document.querySelectorAll(".sort-list-item");
 const boxes = document.querySelectorAll(".scientist");
 let index = 0;
+let num = 0;
+let can = false;
+let on = true;
 
-filters[0].addEventListener("click", () => {
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
+filters[0].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        if (can) {
+            filters[num].style.color = "white";
+        }
+        can = true;
+        num = 0;
+        on = false;
+        addRotating();
+        setTimeout(clearBoxes, 250);
         setTimeout(() => {
-            for (let scientist of scientists) {
-                if (scientist.born >= 1801 && scientist.born <= 1900) {
+            removeRotating();
+            setTimeout(() => {
+                for (let scientist of scientists) {
+                    if (scientist.born >= 1801 && scientist.born <= 1900) {
+                        boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
+                        index++;
+                    }
+                }
+                index = 0;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+    }
+    
+});
+
+filters[1].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 1;
+        on = false;
+        scientists.sort((a, b) => a.name.localeCompare(b.name));
+        addRotating();
+        setTimeout(clearBoxes, 250);
+        setTimeout(() => {
+            removeRotating();
+            setTimeout(() => {
+                for (let scientist of scientists) {
                     boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
                     index++;
                 }
-            }
-            index = 0;
-        }, 250);
-    }, 1000);
+                index = 0;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+        
+    }
 });
 
-filters[1].addEventListener("click", () => {
-    scientists.sort((a, b) => a.name.localeCompare(b.name));
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
+filters[2].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 2;
+        on = false;
+        scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
+        addRotating();
+        setTimeout(clearBoxes, 250);
         setTimeout(() => {
-            for (let scientist of scientists) {
-                boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
-                index++;
-            }
-            index = 0;
-        }, 250);
-    }, 1000);
-});
-
-filters[2].addEventListener("click", () => {
-    scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
-        setTimeout(() => {
-            for (let scientist of scientists) {
-                boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
-                index++;
-            }
-            index = 0;
-        }, 250);
-    }, 1000);
+            removeRotating();
+            setTimeout(() => {
+                for (let scientist of scientists) {
+                    boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
+                    index++;
+                }
+                index = 0;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+        
+    }
+    
     
 });
 
-filters[3].addEventListener("click", () => {
-    scientists.sort((a, b) => b.born - a.born);
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
+filters[3].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 3;
+        on = false;
+        scientists.sort((a, b) => b.born - a.born);
+        addRotating();
+        setTimeout(clearBoxes, 250);
         setTimeout(() => {
-            boxes[0].innerHTML = `${scientists[0].name} ${scientists[0].surname} <br> ${scientists[0].born}-${scientists[0].dead}`;
-        }, 250);
-    }, 1000);
+            removeRotating();
+            setTimeout(() => {
+                boxes[0].innerHTML = `${scientists[0].name} ${scientists[0].surname} <br> ${scientists[0].born}-${scientists[0].dead}`;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+    }
 });
 
-filters[4].addEventListener("click", () => {
-    const obj = scientists.find((el) => el.name === "Albert" && el.surname === "Einstein");
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
+filters[4].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 4;
+        on = false;
+        const obj = scientists.find((el) => el.name === "Albert" && el.surname === "Einstein");
+        addRotating();
+        setTimeout(clearBoxes, 250);
         setTimeout(() => {
-            boxes[0].innerHTML = `${obj.name} ${obj.surname} <br> ${obj.born}-${obj.dead}`;
-        }, 250);
-    }, 1000);
-});
-
-filters[5].addEventListener("click", () => {
-    const objs = scientists.filter((el) => el.name[0] === "S");
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
-        setTimeout(() => {
-            for (let scientist of objs) {
-                boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
-                index++;
-            }
-            index = 0;
-        }, 250);
-    }, 1000);
+            removeRotating();
+            setTimeout(() => {
+                boxes[0].innerHTML = `${obj.name} ${obj.surname} <br> ${obj.born}-${obj.dead}`;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+    }
     
 });
 
-filters[6].addEventListener("click", () => {
-    const objs = scientists.filter((el) => el.name[0] !== "A");
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
+filters[5].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 5;
+        on = false;
+        const objs = scientists.filter((el) => el.name[0] === "S");
+        addRotating();
+        setTimeout(clearBoxes, 250);
         setTimeout(() => {
-            for (let scientist of objs) {
-                boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
-                index++;
-            }
-            index = 0;
-        }, 250);
-    }, 1000);
+            removeRotating();
+            setTimeout(() => {
+                for (let scientist of objs) {
+                    boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
+                    index++;
+                }
+                index = 0;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+    }
+    
     
 });
 
-filters[7].addEventListener("click", () => {
-    scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
+filters[6].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 6;
+        on = false;
+        const objs = scientists.filter((el) => el.name[0] !== "A");
+        addRotating();
+        setTimeout(clearBoxes, 250);
         setTimeout(() => {
-            boxes[0].innerHTML = `${scientists[0].name} ${scientists[0].surname} <br> ${scientists[0].born}-${scientists[0].dead}`;
-            boxes[1].innerHTML = `${scientists[scientists.length-1].name} ${scientists[scientists.length-1].surname} <br> ${scientists[scientists.length-1].born}-${scientists[scientists.length-1].dead}`;
-        }, 250);
-    }, 1000);
+            removeRotating();
+            setTimeout(() => {
+                for (let scientist of objs) {
+                    boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
+                    index++;
+                }
+                index = 0;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+    }
+    
     
 });
 
-filters[8].addEventListener("click", () => {
-    const objs = scientists.filter((el) => el.name[0] === el.surname[0]);
-    addRotating();
-    setTimeout(clearBoxes, 250);
-    setTimeout(() => {
-        removeRotating();
+filters[7].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 7;
+        on = false;
+        scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
+        addRotating();
+        setTimeout(clearBoxes, 250);
         setTimeout(() => {
-            for (let scientist of objs) {
-                boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
-                index++;
-            }
-            index = 0;
-        }, 250);
-    }, 1000);
+            removeRotating();
+            setTimeout(() => {
+                boxes[0].innerHTML = `${scientists[0].name} ${scientists[0].surname} <br> ${scientists[0].born}-${scientists[0].dead}`;
+                boxes[1].innerHTML = `${scientists[scientists.length-1].name} ${scientists[scientists.length-1].surname} <br> ${scientists[scientists.length-1].born}-${scientists[scientists.length-1].dead}`;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+    }
+    
+    
+});
+
+filters[8].addEventListener("click", (e) => {
+    
+    if (on) {
+        e.currentTarget.style.color = "green";
+        filters[num].style.color = "white";
+        num = 8;
+        on = false;
+        const objs = scientists.filter((el) => el.name[0] === el.surname[0]);
+        addRotating();
+        setTimeout(clearBoxes, 250);
+        setTimeout(() => {
+            removeRotating();
+            setTimeout(() => {
+                for (let scientist of objs) {
+                    boxes[index].innerHTML = `${scientist.name} ${scientist.surname} <br> ${scientist.born}-${scientist.dead}`;
+                    index++;
+                }
+                index = 0;
+            }, 250);
+            setTimeout(() => on = true, 1000);
+        }, 1000);
+    }
+    
 });
 
 function clearBoxes() {
