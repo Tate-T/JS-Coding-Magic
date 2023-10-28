@@ -1,0 +1,67 @@
+footer {
+    display: flex;
+    margin-left: 175px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+/* logo */
+
+
+.footer__logo--icon {
+    width: 180px;
+    height: 70px;
+}
+
+/* footer-content */
+
+
+.footer__list {
+    margin-left: 185px;
+}
+
+.footer__item-text {
+    Font: Montserrat Alternates;
+    Size: 12px;
+    Line-height: 20.4px;
+
+}
+
+/* mail */
+
+.mail__footer--div {
+    margin-left: 185px;
+}
+
+.mail__div--comment {
+    width: 204px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    color: #7E7E7E;
+    padding: 10px, 80px, 10px, 10px;
+    background-color: #D7D7D7;
+    gap: 10px;
+    padding-left: 15px;
+
+}
+
+.mail__div--text {
+    Font: Montserrat Alternates;
+    margin-top: 25px;
+    Size: 6px;
+    line-height: 7.31px;
+
+}
+
+.mail__div--button {
+    margin-left: 38px;
+    border: none;
+    width: 107px;
+    height: 35px;
+    color: white;
+    border-radius: 20px;
+    background-color: #000000;
+    Padding: 10px;
+    gap: 10px;
+}
