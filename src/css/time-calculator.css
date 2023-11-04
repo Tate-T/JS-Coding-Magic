@@ -5,11 +5,14 @@
 }
 
 .time-calculator-block {
+    width: 566px;
     display: flex;
-    flex-direction: row;
     gap: 30px;
+    padding-left: 16px;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 #counter {
@@ -30,6 +33,7 @@
     flex-direction: row;
     gap: 0px;
     filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+    margin-right: 20px;
 }
 
 .time-calculator-input-block button {
@@ -47,4 +51,9 @@
     width: 20px;
     height: 20px;
     stroke: white;
+}
+
+#time-counter {
+    margin-right: auto;
+    text-wrap: nowrap;
 }
