@@ -92,14 +92,53 @@ let num = 0;
 let can = false;
 let on = true;
 
-filters[0].addEventListener("click", (e) => {
-    
+filters[0].addEventListener("click", zero);
+
+filters[1].addEventListener("click", one);
+
+filters[2].addEventListener("click", two);
+
+filters[3].addEventListener("click", three);
+
+filters[4].addEventListener("click", four);
+
+filters[5].addEventListener("click", five);
+
+filters[6].addEventListener("click", six);
+
+filters[7].addEventListener("click", seven);
+
+filters[8].addEventListener("click", eight);
+
+
+
+function clearBoxes() {
+    for (let i of boxes) {
+        i.innerHTML = "";
+    }
+}
+
+function addRotating() {
+    for (let i of boxes) {
+        i.style.transform = "scaleX(-1)";
+    }
+}
+
+function removeRotating() {
+    for (let i of boxes) {
+        i.style.transform = "scaleX(1)";
+    }
+}
+
+function zero(e) {
     if (on) {
         e.currentTarget.style.color = "green";
         if (can) {
-            filters[num].style.color = "white";
+            filters[num].style.color = num === 0 ? "green" : "white";
         }
-        can = true;
+        else {
+            can = true;
+        }
         num = 0;
         on = false;
         addRotating();
@@ -118,14 +157,12 @@ filters[0].addEventListener("click", (e) => {
             setTimeout(() => on = true, 1000);
         }, 1000);
     }
-    
-});
+}
 
-filters[1].addEventListener("click", (e) => {
-    
+function one(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 1 ? "green" : "white";
         num = 1;
         on = false;
         scientists.sort((a, b) => a.name.localeCompare(b.name));
@@ -144,13 +181,12 @@ filters[1].addEventListener("click", (e) => {
         }, 1000);
         
     }
-});
+}
 
-filters[2].addEventListener("click", (e) => {
-    
+function two(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 2 ? "green" : "white";
         num = 2;
         on = false;
         scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
@@ -169,15 +205,12 @@ filters[2].addEventListener("click", (e) => {
         }, 1000);
         
     }
-    
-    
-});
+}
 
-filters[3].addEventListener("click", (e) => {
-    
+function three(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 3 ? "green" : "white";
         num = 3;
         on = false;
         scientists.sort((a, b) => b.born - a.born);
@@ -191,13 +224,12 @@ filters[3].addEventListener("click", (e) => {
             setTimeout(() => on = true, 1000);
         }, 1000);
     }
-});
+}
 
-filters[4].addEventListener("click", (e) => {
-    
+function four(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 4 ? "green" : "white";
         num = 4;
         on = false;
         const obj = scientists.find((el) => el.name === "Albert" && el.surname === "Einstein");
@@ -211,14 +243,12 @@ filters[4].addEventListener("click", (e) => {
             setTimeout(() => on = true, 1000);
         }, 1000);
     }
-    
-});
+}
 
-filters[5].addEventListener("click", (e) => {
-    
+function five(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 5 ? "green" : "white";
         num = 5;
         on = false;
         const objs = scientists.filter((el) => el.name[0] === "S");
@@ -236,15 +266,12 @@ filters[5].addEventListener("click", (e) => {
             setTimeout(() => on = true, 1000);
         }, 1000);
     }
-    
-    
-});
+}
 
-filters[6].addEventListener("click", (e) => {
-    
+function six(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 6 ? "green" : "white";
         num = 6;
         on = false;
         const objs = scientists.filter((el) => el.name[0] !== "A");
@@ -262,15 +289,12 @@ filters[6].addEventListener("click", (e) => {
             setTimeout(() => on = true, 1000);
         }, 1000);
     }
-    
-    
-});
+}
 
-filters[7].addEventListener("click", (e) => {
-    
+function seven(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 7 ? "green" : "white";
         num = 7;
         on = false;
         scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
@@ -285,15 +309,12 @@ filters[7].addEventListener("click", (e) => {
             setTimeout(() => on = true, 1000);
         }, 1000);
     }
-    
-    
-});
+}
 
-filters[8].addEventListener("click", (e) => {
-    
+function eight(e) {
     if (on) {
         e.currentTarget.style.color = "green";
-        filters[num].style.color = "white";
+        filters[num].style.color = num === 8 ? "green" : "white";
         num = 8;
         on = false;
         const objs = scientists.filter((el) => el.name[0] === el.surname[0]);
@@ -310,24 +331,5 @@ filters[8].addEventListener("click", (e) => {
             }, 250);
             setTimeout(() => on = true, 1000);
         }, 1000);
-    }
-    
-});
-
-function clearBoxes() {
-    for (let i of boxes) {
-        i.innerHTML = "";
-    }
-}
-
-function addRotating() {
-    for (let i of boxes) {
-        i.style.transform = "scaleX(-1)";
-    }
-}
-
-function removeRotating() {
-    for (let i of boxes) {
-        i.style.transform = "scaleX(1)";
     }
 }
