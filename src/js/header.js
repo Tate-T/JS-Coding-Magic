@@ -4,9 +4,10 @@ const beg = document.querySelector(".backdrop-header");
 const nameUsir = document.querySelector(".modal__header--comment");
 const textUsir = document.querySelector(".header__hiUser-text");
 
-textUsir.addEventListener("input", (e) => {
-    nameUsir.textContent = "Вітаємо, " + e.currentTarget.value + "!";
-    });
+nameUsir.addEventListener("input", (e) => {
+    textUsir.textContent = "Вітаємо, " + e.currentTarget.value + "!";
+});
+
 
 
 btnOff.addEventListener("click", closeModal);

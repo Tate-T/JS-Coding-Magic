@@ -12,6 +12,8 @@
 /* header */
 @import url('./header.css');
 /* check-year */
+@import url('./check-year.css');
+
 @import url('./quess-number.css');
 @import url('./rock-paper-scissors.css');
 @import url('./calculator.css');

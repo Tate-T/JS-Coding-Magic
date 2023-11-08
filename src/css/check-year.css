@@ -1,0 +1,36 @@
+.check-div {
+    display: flex;
+    
+}
+
+.cheack__year-div {
+    display: flex;
+    margin-top: 36px;
+}
+
+.check-year-input {
+    width: 215px;
+    height: 35px;
+    background-color: #D7D7D7;
+    border: none;
+    color: #7E7E7E;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.chaeck-year-svg {
+    fill: white;
+    width: 15px;
+    height: 15px;
+
+}
+
+.chaeck-year-btn {
+    border: none;
+    margin-right: 150px;
+    margin-left: -30px;
+    height: 35px;
+    background-color: #000;
+    width: 35px;
+    border-radius: 0px, 20px, 20px, 0px;
+}
