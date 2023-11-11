@@ -1,14 +1,22 @@
 .check-div {
     display: flex;
-    
+
 }
 
 .cheack__year-div {
     display: flex;
-    margin-top: 36px;
+    align-items: center;
+
+}
+
+.header__hiUser-text {
+
+    font-size: 12px;
+
 }
 
 .check-year-input {
+
     width: 215px;
     height: 35px;
     background-color: #D7D7D7;
@@ -21,9 +29,9 @@
 }
 
 .chaeck-year-svg {
-    fill: white;
-    width: 15px;
-    height: 15px;
+    stroke: white;
+    width: 20px;
+    height: 20px;
 
 }
 
