@@ -4,12 +4,25 @@ const beg = document.querySelector(".backdrop-header");
 const nameUsir = document.querySelector(".modal__header--comment");
 const textUsir = document.querySelector(".header__hiUser-text");
 const btnModalOff = document.querySelector("[data-close-modal]");
+const btnMenuOn = document.querySelector("[data-open-menu]");
+const btnMenuOff = document.querySelector("[data-close-menu]");
+const menu = document.querySelector("[data-menu]");
+
+btnMenuOn.addEventListener("click", openMenu);
+btnMenuOff.addEventListener("click", closeMenu);
+
+function closeMenu() {
+    menu.style.display = "none";
+};
+
+function openMenu() {
+    menu.style.display = "block";
+};
+
 
 nameUsir.addEventListener("input", (e) => {
     textUsir.textContent = "Вітаємо, " + e.currentTarget.value + "!";
 });
-
-
 
 btnModalOff.addEventListener("click", closeModal)
 
