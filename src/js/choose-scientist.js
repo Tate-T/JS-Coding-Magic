@@ -132,13 +132,14 @@ function removeRotating() {
 
 function zero(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
+        
         if (can) {
-            filters[num].style.color = num === 0 ? "green" : "white";
+            filters[num].style.color = "white";
         }
         else {
             can = true;
         }
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 0;
         on = false;
         addRotating();
@@ -161,8 +162,8 @@ function zero(e) {
 
 function one(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 1 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 1;
         on = false;
         scientists.sort((a, b) => a.name.localeCompare(b.name));
@@ -185,8 +186,8 @@ function one(e) {
 
 function two(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 2 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 2;
         on = false;
         scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
@@ -209,8 +210,8 @@ function two(e) {
 
 function three(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 3 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 3;
         on = false;
         scientists.sort((a, b) => b.born - a.born);
@@ -228,8 +229,8 @@ function three(e) {
 
 function four(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 4 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 4;
         on = false;
         const obj = scientists.find((el) => el.name === "Albert" && el.surname === "Einstein");
@@ -247,8 +248,8 @@ function four(e) {
 
 function five(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 5 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 5;
         on = false;
         const objs = scientists.filter((el) => el.name[0] === "S");
@@ -270,8 +271,8 @@ function five(e) {
 
 function six(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 6 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 6;
         on = false;
         const objs = scientists.filter((el) => el.name[0] !== "A");
@@ -293,8 +294,8 @@ function six(e) {
 
 function seven(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 7 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 7;
         on = false;
         scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
@@ -313,8 +314,8 @@ function seven(e) {
 
 function eight(e) {
     if (on) {
-        e.currentTarget.style.color = "green";
-        filters[num].style.color = num === 8 ? "green" : "white";
+        filters[num].style.color = "white";
+        e.currentTarget.style.color = "rgb(21, 212, 24)";
         num = 8;
         on = false;
         const objs = scientists.filter((el) => el.name[0] === el.surname[0]);
