@@ -6,14 +6,28 @@
     </a>
     <nav class="header__navigation">
         <ul class="header-list">
-            <li class="header__list-item">
-                <a href="" class="header__item-page">Інтерактив</a>
-                <button type="button" class="header__item-btn">
+            <li class="header__list-item" >
+                <button type="button" class="header__item-page" data-open-menu >Інтерактив</button>
+                <button type="button" class="header__item-btn" data-close-menu>
                     <svg class="header__open--icon">
                         <use href="./img/symbol-defs.svg#imouse" class="icon-header__list"></use>
                     </svg>
                 </button>
+                  <div class="header-pages-div" data-menu>
+                <ul class="list-pages">
+                    <li class="item-pages">
+                        <a href="" class="header-page-item">Числовий</a>
+                    </li>
+                    <li class="item-pages">
+                        <a href="" class="header-page-item">Ігровий</a>
+                    </li>
+                    <li class="item-pages">
+                        <a href="" class="header-page-item">Ознайомчий</a>
+                    </li>
+                </ul>
+            </div>
             </li>
+          
             <li class="header__list-item">
                 <a href="" class="header__item-page">Наша команда</a>
             </li>
@@ -41,13 +55,13 @@
                 <use href="./img/symbol-defs.svg#" class="icon-modal"></use>
             </svg>
         </button>
-        <p class="modal-text-header">Привіт!
-                Ви потрапили на сайт інтерактивних ігор та завдань
-                Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
-                Бажаємо Вам гарно провести час!</p>
+        <p class="modal-text-header"><br class="modal-text-hi">Привіт!<br>
+            Ви потрапили на сайт інтерактивних ігор та завдань
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+            Бажаємо Вам гарно провести час!</p>
         <p class="modal-text-name">Введіть своє ім’я:</p>
-            <input type="text" class="modal__header--comment" placeholder="Ваше ім’я..."/>
-            <button type="" class="modal__header--button" data-close-modal >Зберегти</button>
+        <input type="text" class="modal__header--comment" placeholder="Ваше ім’я..." />
+        <button type="" class="modal__header--button" data-close-modal>Зберегти</button>
         <div class="modal__image-list">
             <img src="./img/sword.png" alt="1" class="modal__header-img1">
             <img src="./img/puzzle.png" alt="2" class="modal__header-img2">
