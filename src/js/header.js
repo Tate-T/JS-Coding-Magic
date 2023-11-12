@@ -1,14 +1,33 @@
-const btnOn = document.querySelector("[data-action]");
-const btnOff = document.querySelector(`button[data-action="close-modal"]`);
+const btnOn = document.querySelector("[data-open]");
+const btnOff = document.querySelector('[data-close-header]');
+const beg = document.querySelector(".backdrop-header");
+const nameUsir = document.querySelector(".modal__header--comment");
+const textUsir = document.querySelector(".header__hiUser-text");
+const btnModalOff = document.querySelector("[data-close-modal]");
+const btnMenuOn = document.querySelector("[data-open-menu]");
+const btnMenuOff = document.querySelector("[data-close-menu]");
+const menu = document.querySelector("[data-menu]");
 
-function openModal() {
-    document.body.classList.add("show-modal");
+btnMenuOn.addEventListener("click", openMenu);
+btnMenuOff.addEventListener("click", closeMenu);
+
+function closeMenu() {
+    menu.style.display = "none";
 };
 
-btnOn.addEventListener("click", openModal);
+function openMenu() {
+    menu.style.display = "block";
+};
 
+
+nameUsir.addEventListener("input", (e) => {
+    textUsir.textContent = "Вітаємо, " + e.currentTarget.value + "!";
+});
+
+btnModalOff.addEventListener("click", closeModal)
 
 btnOff.addEventListener("click", closeModal);
+
 function closeModal() {
-    document.body.classList.remove("show-modal");
+    beg.style.display = "none";
 };

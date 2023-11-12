@@ -1,3 +1,9 @@
+.dinoBack {
+  background-image: url("../img/dinoBack.png");
+  width: 600px;
+  height: 300px;
+}
+
 
   .game-container {
     position: relative;
@@ -11,3 +17,4 @@
     display: flex;
     justify-content: center;
   }
+

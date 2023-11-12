@@ -4,12 +4,16 @@
   | default @import url()
   |============================
 */
+
+/* @import url('.'); */
 @import url('./reset.css');
 /* header-modal */
-/* @import url('.'); */
+@import url('./header-modal.css');
 /* header */
 @import url('./header.css');
 /* check-year */
+@import url('./check-year.css');
+
 @import url('./quess-number.css');
 @import url('./rock-paper-scissors.css');
 @import url('./calculator.css');
