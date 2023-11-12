@@ -103,11 +103,13 @@
 }
 
 .header__close--icon {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .close-modal-header {
     margin-left: 521px;
-    margin-top: 30px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
 }
