@@ -4,3 +4,17 @@
   height: 300px;
 }
 
+
+  .game-container {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
