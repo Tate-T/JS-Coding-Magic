@@ -7,3 +7,7 @@
     border: 1px solid #ddd;
     overflow: hidden;
   }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
