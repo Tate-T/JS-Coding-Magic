@@ -10,10 +10,12 @@
 
 .check__year-text {
     margin-top: 10px;
-    font-size: 12px;
+    margin-left: 150px;
+
 }
 
 .check-year-input {
+    box-sizing: border-box;
     width: 215px;
     height: 35px;
     background-color: #D7D7D7;
@@ -34,9 +36,9 @@
 
 .chaeck-year-btn {
     border: none;
-    margin-right: 150px;
-    margin-left: -30px;
-    height: 37px;
+    
+    margin-left: -20px;
+    height: 35px;
     background-color: #000;
     width: 35px;
     box-shadow: #000;

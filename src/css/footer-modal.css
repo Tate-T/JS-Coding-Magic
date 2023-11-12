@@ -12,14 +12,15 @@
 }
 
 .footer__close--icon {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .close-modal {
     background-color: white;
+    border: none;
     margin-left: 415px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .modal-text {
