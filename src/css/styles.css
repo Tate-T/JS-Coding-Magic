@@ -5,27 +5,21 @@
   |============================
 */
 
-/* @import url('.'); */
-@import url('./reset.css');
-/* header-modal */
-@import url('./header-modal.css');
-/* header */
-@import url('./header.css');
-/* check-year */
-@import url('./check-year.css');
 
+@import url('./reset.css');
+@import url('./header-modal.css');
+@import url('./header.css');
+@import url('./check-year.css');
 @import url('./quess-number.css');
 @import url('./rock-paper-scissors.css');
 @import url('./calculator.css');
 @import url('./time-calculator.css');
-/* dinosaur */
+@import url('./dinosaur.css');
 @import url('./football.css');
 /* max-number */
-/* our-team */
+@import url('./our-team.css');
 @import url('./choose-scientist.css');
-/* footer */
 @import url('./footer.css');
-/* footer-modal */
 @import url('./footer-modal.css');
 
 
