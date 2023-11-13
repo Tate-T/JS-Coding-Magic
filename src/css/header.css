@@ -34,13 +34,15 @@ header {
 }
 
 .header__item-btn {
-    width: 5px;
-    height: 9px;
+    background-color: white;
+    border: none;
+    width: 15px;
+    height: 15px;
 }
 
 .header__open--icon {
-    width: 5px;
-    height: 9px;
+    width: 15px;
+    height: 15px;
 }
 
 .header__navigation {
@@ -107,7 +109,7 @@ header {
     display: none;
 }
 
-/* eeeeeeee якась діч  */
+/* menu */
 
 .header-pages-div {
     display: none;
