@@ -36,7 +36,7 @@ header {
 .header__item-btn {
     background-color: white;
     border: none;
-    width: 15px;
+    width: 30px;
     height: 15px;
 }
 
@@ -62,19 +62,13 @@ header {
     border: 3px solid #bdbdbd;
 }
 
-;
-
 #validation-input.valid {
     border-color: #4caf50;
 }
 
-;
-
 #validation-input.invalid {
     border-color: #f44336;
 }
-
-;
 
 
 .header__hiUser-text {
@@ -89,7 +83,7 @@ header {
 
 .header-hiUser {
     margin-top: 30px;
-    margin-left: 361px;
+    margin-left: 300px;
     display: flex;
     margin-bottom: 32px;
 
