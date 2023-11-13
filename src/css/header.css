@@ -34,13 +34,15 @@ header {
 }
 
 .header__item-btn {
-    width: 5px;
-    height: 9px;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 15px;
 }
 
 .header__open--icon {
-    width: 5px;
-    height: 9px;
+    width: 15px;
+    height: 15px;
 }
 
 .header__navigation {
@@ -60,19 +62,13 @@ header {
     border: 3px solid #bdbdbd;
 }
 
-;
-
 #validation-input.valid {
     border-color: #4caf50;
 }
 
-;
-
 #validation-input.invalid {
     border-color: #f44336;
 }
-
-;
 
 
 .header__hiUser-text {
@@ -87,7 +83,7 @@ header {
 
 .header-hiUser {
     margin-top: 30px;
-    margin-left: 361px;
+    margin-left: 300px;
     display: flex;
     margin-bottom: 32px;
 
@@ -107,7 +103,7 @@ header {
     display: none;
 }
 
-/* eeeeeeee якась діч  */
+/* menu */
 
 .header-pages-div {
     display: none;
