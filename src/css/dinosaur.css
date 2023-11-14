@@ -1,17 +1,29 @@
-.dinoBack {
-  background-image: url("../img/dinoBack.png");
-  width: 600px;
-  height: 300px;
+canvas {
+  position: relative;
+  border-bottom: 2px solid rgb(186, 186, 186);
+  margin-bottom: 25px;
+}
+.start-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(234, 234, 234);
+}
+.start-btn:hover {
+  background-color: rgb(203, 203, 203);
 }
 
-
-  .game-container {
-    position: relative;
-    width: 600px;
-    height: 200px;
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    overflow: hidden;
-  }
-  
-
+.game-over {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 120px;
+}
+.game-over button {
+  width: 100%;
+}
+.game-over p {
+  width: 100%;
+  text-align: center;
+}
