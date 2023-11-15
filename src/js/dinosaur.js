@@ -3,6 +3,8 @@ const main = canvas.getContext("2d");
 const dino = document.querySelector("#dino");
 const cactus = document.querySelector("#cactus");
 const startBtn = document.querySelector("[data-start]");
+const end = document.querySelector(".game-over");
+const tryAgain = document.querySelector(".try-again");
 let start;
 let sec = 0;
 let x = 600;
@@ -16,11 +18,25 @@ let jumping;
 main.drawImage(dino, 30, y, 60, 60);
 
 startBtn.addEventListener("click", () => {
-  if (!gameOn) {
-    start = setInterval(game, 10);
-    gameOn = true;
+  start = setInterval(game, 10);
+  gameOn = true;
+  startBtn.style.opacity = 0;
+  startBtn.style.pointerEvents = "none";
+  document.addEventListener("keydown", (e) => {
+  if (e.code === "Space") {
+    if (pass) {
+      jumpOn = true;
+    }
+    e.preventDefault();
   }
-  startBtn.style.display = "none";
+});
+});
+
+tryAgain.addEventListener("click", () => {
+  start = setInterval(game, 10);
+  gameOn = true;
+  end.style.opacity = 0;
+  end.style.pointerEvents = "none";
 });
 
 function game() {
@@ -46,15 +62,6 @@ function moveCactus() {
   x-=3;
   main.drawImage(cactus, x, 150, 25, 50);
 }
-
-document.addEventListener("keydown", (e) => {
-  if (e.code === "Space") {
-    if (pass) {
-      jumpOn = true;
-    }
-    e.preventDefault();
-  }
-});
 
 let ms = 0;
 function jump() {
@@ -82,8 +89,11 @@ function gameOver() {
     x = 600;
     y = 140;
     main.drawImage(dino, 30, y, 60, 60);
+    mod = -2;
     sec = 0;
     pass = true;
     jumpOn = false;
+    end.style.opacity = 1;
+    end.style.pointerEvents = "all";
   }
 }

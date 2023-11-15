@@ -1,5 +1,4 @@
 canvas {
-  position: relative;
   border-bottom: 2px solid rgb(186, 186, 186);
   margin-bottom: 25px;
 }
@@ -9,21 +8,44 @@ canvas {
   border-radius: 25px;
   border: none;
   background-color: rgb(234, 234, 234);
+  transition: 1s linear;
 }
 .start-btn:hover {
   background-color: rgb(203, 203, 203);
 }
 
 .game-over {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 120px;
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgb(224, 224, 224);
+  transition: 1s linear ;
+  pointer-events: all;
 }
 .game-over button {
-  width: 100%;
+  width: 120px;
+  height: 30px;
+  font-family: "Montserrat Alternates";
+  border-radius: 8px;
+}
+.game-over button:hover {
+  background-color: rgb(255, 255, 255);
 }
 .game-over p {
-  width: 100%;
+  width: 120px;
   text-align: center;
+}
+
+.dinosaur {
+  position: relative;
 }

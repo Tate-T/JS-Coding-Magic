@@ -13,7 +13,7 @@ const sunMoon = document.querySelector("[data-sunMoon]");
 const moon = document.querySelector("[data-moon]");
 
 sun.addEventListener("click", () => {
-    sun.syle.display = "none";
+    sun.style.display = "none";
     moon.style.display = "block";
 });
 
