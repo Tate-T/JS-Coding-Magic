@@ -143,3 +143,26 @@ header {
     font-weight: 400;
     line-height: normal;
 }
+
+/* button header */
+.img-moon {
+    display: none;
+   margin-left: 12px;
+   margin-top: -1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+
+.img-sun {
+    
+    
+    margin-top: -2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-left: -6px;
+    border: 1px solid #000;
+}
