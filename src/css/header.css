@@ -105,16 +105,20 @@ header {
 
 /* menu */
 
+
+
+
 .header-pages-div {
     display: none;
     position: absolute;
+    margin-bottom: 100px;
     width: 130px;
-    height: 100px;
+    z-index: 999;
     border-radius: 0px 0px 20px 20px;
     border-right: 1px solid #000;
 
     border-bottom: 1px solid #000;
-    z-index: 999;
+    background-color: white;
     border-left: 1px solid #000;
 }
 

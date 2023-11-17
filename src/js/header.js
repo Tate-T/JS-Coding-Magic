@@ -8,9 +8,25 @@ const btnMenuOn = document.querySelector("[data-open-menu]");
 const btnMenuOff = document.querySelector("[data-close-menu]");
 const menu = document.querySelector("[data-menu]");
 
+const color = document.querySelector("[data-color]");
+
+color.addEventListener("click", () => {
+    const red = Math.random() * 255;
+        const green = Math.random() * 255;
+        const blue = Math.random() * 255;
+        beg.style.backgroundColor = `rgb(${red}, ${green}, ${blue}, 0.9)`;
+        btnModalOff.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+});
+
 const sun = document.querySelector("[data-sun]")
 const sunMoon = document.querySelector("[data-sunMoon]");
 const moon = document.querySelector("[data-moon]");
+
+moon.addEventListener("click", () => {
+    moon.style.display = "none";
+    sun.style.display = "block";
+});
+
 
 sun.addEventListener("click", () => {
     sun.style.display = "none";
@@ -30,7 +46,7 @@ function openMenu() {
 
 
 nameUsir.addEventListener("input", (e) => {
-    textUsir.textContent = "Вітаємо, " + e.currentTarget.value + "!";
+    textUsir.textContent = "Вітаємо," + "-" + e.currentTarget.value + "!";
 });
 
 btnModalOff.addEventListener("click", closeModal)
