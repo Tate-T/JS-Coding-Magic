@@ -20,7 +20,7 @@ header {
 
 .header__item-page {
     color: #000;
-    background-color: white;
+    background-color: transparent;
     border: none;
     font-family: Montserrat Alternates;
     font-size: 12px;
@@ -34,7 +34,7 @@ header {
 }
 
 .header__item-btn {
-    background-color: white;
+    background-color: transparent;
     border: none;
     width: 30px;
     height: 15px;
