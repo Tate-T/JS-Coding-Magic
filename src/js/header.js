@@ -4,9 +4,10 @@ const beg = document.querySelector(".backdrop-header");
 const nameUsir = document.querySelector(".modal__header--comment");
 const textUsir = document.querySelector(".header__hiUser-text");
 const btnModalOff = document.querySelector("[data-close-modal]");
-const btnMenuOn = document.querySelector("[data-open-menu]");
-const btnMenuOff = document.querySelector("[data-close-menu]");
+const btnMenu = document.querySelector("#header-filter");
 const menu = document.querySelector("[data-menu]");
+const filters = document.querySelectorAll(".item-pages");
+const games = document.querySelectorAll("section");
 
 const color = document.querySelector("[data-color]");
 
@@ -33,20 +34,12 @@ sun.addEventListener("click", () => {
     moon.style.display = "block";
 });
 
-btnMenuOn.addEventListener("click", openMenu);
-btnMenuOff.addEventListener("click", closeMenu);
-
-function closeMenu() {
-    menu.style.display = "none";
-};
-
-function openMenu() {
-    menu.style.display = "block";
-};
-
+btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("visible");
+});
 
 nameUsir.addEventListener("input", (e) => {
-    textUsir.textContent = "Вітаємо," + "-" + e.currentTarget.value + "!";
+    textUsir.textContent = "Вітаємо," + " " + e.currentTarget.value + "!";
 });
 
 btnModalOff.addEventListener("click", closeModal)
@@ -56,3 +49,23 @@ btnOff.addEventListener("click", closeModal);
 function closeModal() {
     beg.style.display = "none";
 };
+
+const first = [0, 3, 4, 7];
+const second = [1, 2, 5, 6];
+const third = [8, 9];
+
+filters[0].addEventListener("click", () => {
+    for (let i = 0; i < games.length; i++){
+        games[i].style.display = first.includes(i) ? "flex" : "none";
+    }
+});
+filters[1].addEventListener("click", () => {
+    for (let i = 0; i < games.length; i++){
+        games[i].style.display = second.includes(i) ? "flex" : "none";
+    }
+});
+filters[2].addEventListener("click", () => {
+    for (let i = 0; i < games.length; i++){
+        games[i].style.display = third.includes(i) ? "flex" : "none";
+    }
+});

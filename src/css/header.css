@@ -109,44 +109,41 @@ header {
 
 
 .header-pages-div {
-    display: none;
     position: absolute;
-    margin-bottom: 100px;
+    left: 0;
+    top: 20px;
     width: 130px;
     z-index: 999;
     border-radius: 0px 0px 20px 20px;
-    border-right: 1px solid #000;
+    border: 1px solid #000;
+    border-top: 1px solid transparent;
+    background-color: rgb(247, 247, 247);
+    
+}
 
-    border-bottom: 1px solid #000;
-    background-color: white;
-    border-left: 1px solid #000;
+.visible {
+    display: none;
 }
 
 .item-pages {
     width: 130px;
     height: 33px;
-
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .item-pages:hover {
-    background-color: #F1F1F1;
+    background-color: #dddddd;
 }
 
-.item-pages:last-child:hover {
-    border-radius: 0px 0px 20px 20px;
-
-    background: #F1F1F1;
+.item-pages:last-child {
+    border-radius: 0px 0px 20px 20px;;
 }
 
-.header-page-item {
-    color: #000;
-    margin-right: 20px;
-    margin-left: 20px;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+
 
 /* button header */
 .img-moon {
@@ -161,12 +158,20 @@ header {
 
 
 .img-sun {
-    
-    
     margin-top: -2px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
     margin-left: -6px;
     border: 1px solid #000;
+}
+
+#header-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parent-menu {
+    position: relative;
 }
