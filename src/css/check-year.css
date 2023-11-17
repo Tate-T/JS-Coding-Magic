@@ -5,12 +5,13 @@
 
 .cheack__year-div {
     display: flex;
-
+    width: 576px;
+    height: 40px;
 }
 
 .check__year-text {
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: auto;
 
 }
 
