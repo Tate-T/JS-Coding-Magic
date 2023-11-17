@@ -6,24 +6,21 @@
     </a>
     <nav class="header__navigation">
         <ul class="header-list">
-            <li class="header__list-item" >
-                <button type="button" class="header__item-page" data-open-menu >Інтерактив</button>
-                <button type="button" class="header__item-btn" data-close-menu>
-                    <svg class="header__open--icon">
-                        <use href="./img/symbol-defs.svg#arrow-down" class="icon-header__list"></use>
-                    </svg>
-                </button>
-                  <div class="header-pages-div" data-menu>
+            <li class="header__list-item" id="parent-menu">
+                <div id="header-filter">
+                    <button type="button" class="header__item-page">Інтерактив</button>
+                    <button type="button" class="header__item-btn">
+                        <svg class="header__open--icon">
+                            <use href="./img/symbol-defs.svg#arrow-down" class="icon-header__list"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+                  <div class="visible header-pages-div" data-menu>
                 <ul class="list-pages">
-                    <li class="item-pages">
-                        <a href="" class="header-page-item">Числовий</a>
-                    </li>
-                    <li class="item-pages">
-                        <a href="" class="header-page-item">Ігровий</a>
-                    </li>
-                    <li class="item-pages">
-                        <a href="" class="header-page-item">Ознайомчий</a>
-                    </li>
+                    <li class="item-pages">Числовий</li>
+                    <li class="item-pages">Ігровий</li>
+                    <li class="item-pages">Ознайомчий</li>
                 </ul>
             </div>
             </li>
