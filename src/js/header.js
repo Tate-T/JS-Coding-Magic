@@ -8,7 +8,7 @@ const btnMenu = document.querySelector("#header-filter");
 const menu = document.querySelector("[data-menu]");
 const filters = document.querySelectorAll(".item-pages");
 const games = document.querySelectorAll("section");
-
+let act = 0;
 const color = document.querySelector("[data-color]");
 
 color.addEventListener("click", () => {
@@ -55,17 +55,59 @@ const second = [1, 2, 5, 6];
 const third = [8, 9];
 
 filters[0].addEventListener("click", () => {
-    for (let i = 0; i < games.length; i++){
-        games[i].style.display = first.includes(i) ? "flex" : "none";
+    if (act === 0) {
+        for (let i = 0; i < games.length; i++) {
+            games[i].style.display = "flex";
+        }
+        filters[act].classList.remove("act");
+        act = -1;
+    }
+    else {
+        for (let i = 0; i < games.length; i++){
+            games[i].style.display = first.includes(i) ? "flex" : "none";
+        }
+        if (act !== -1) {
+            filters[act].classList.remove("act");
+        }
+        act = 0;
+        filters[act].classList.add("act");
     }
 });
 filters[1].addEventListener("click", () => {
-    for (let i = 0; i < games.length; i++){
-        games[i].style.display = second.includes(i) ? "flex" : "none";
+    if (act === 1) {
+        for (let i = 0; i < games.length; i++) {
+            games[i].style.display = "flex";
+        }
+        filters[act].classList.remove("act");
+        act = -1;
+    }
+    else {
+        for (let i = 0; i < games.length; i++){
+            games[i].style.display = second.includes(i) ? "flex" : "none";
+        }
+        if (act !== -1) {
+            filters[act].classList.remove("act");
+        }
+        act = 1;
+        filters[act].classList.add("act");
     }
 });
 filters[2].addEventListener("click", () => {
-    for (let i = 0; i < games.length; i++){
-        games[i].style.display = third.includes(i) ? "flex" : "none";
+    if (act === 2) {
+        for (let i = 0; i < games.length; i++) {
+            games[i].style.display = "flex";
+        }
+        filters[act].classList.remove("act");
+        act = -1;
+    }
+    else {
+        for (let i = 0; i < games.length; i++){
+            games[i].style.display = third.includes(i) ? "flex" : "none";
+        }
+        if (act !== -1) {
+            filters[act].classList.remove("act");
+        }
+        act = 2;
+        filters[act].classList.add("act");
     }
 });

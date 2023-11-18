@@ -88,6 +88,7 @@ function gameOver() {
     clearInterval(jumping);
     x = 600;
     y = 140;
+    ms = 0;
     main.drawImage(dino, 30, y, 60, 60);
     mod = -2;
     sec = 0;
@@ -97,3 +98,5 @@ function gameOver() {
     end.style.pointerEvents = "all";
   }
 }
+
+//Рахунок
