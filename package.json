@@ -1,17 +1,17 @@
 {
-  "name": "vanilla-app-template",
+  "name": "JS-Coding-Magic",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/JS-Coding-Magic/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.0.0"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
