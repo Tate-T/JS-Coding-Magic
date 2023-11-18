@@ -10,7 +10,7 @@ const maxNumber3 = document.querySelector("#counter-max-number3");
         const maxNumber = Math.max(maxNumber1.value, maxNumber2.value, maxNumber3.value);
     text.textContent = maxNumber;
     } else {
-        console.log("error");
+     return;
     }
     
   })
