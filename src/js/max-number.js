@@ -8,7 +8,7 @@ const maxNumber3 = document.querySelector("#counter-max-number3");
   document.addEventListener("keydown", (e) => {
     if (e.code === "Enter") {
         const maxNumber = Math.max(maxNumber1.value, maxNumber2.value, maxNumber3.value);
-    text.textContent = maxNumber;
+    text.textContent = `Найбільше число, яке ви ввели - ${maxNumber}`;
     } else {
      return;
     }
