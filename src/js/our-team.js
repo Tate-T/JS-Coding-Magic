@@ -8,7 +8,7 @@ let index = 0;
 const members = [
     {
         name: "Андрій Федак",
-        description: "text"
+        description: "Зробив header, footer, розмітку і стилі меню, модалки(header, footer)"
     },
     {
         name: "Ясінський Вячеслав",
