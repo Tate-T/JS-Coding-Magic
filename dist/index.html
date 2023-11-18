@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/JS-Coding-Magic/assets/index-3a56eb67.js"></script>
+    <link rel="stylesheet" href="/JS-Coding-Magic/assets/index-6430d7a5.css">
+  </head>
+  <body>
+    <header>
+    <a href="./header.html" class="header__logo">
+        <svg class="header__logo--icon">
+            <use href="/JS-Coding-Magic/assets/symbol-defs-fddf63b7.svg#icon-header" class="icon-header"></use>
+        </svg>
+    </a>
+    <nav class="header__navigation">
+        <ul class="header-list">
+            <li class="header__list-item" id="parent-menu">
+                <div id="header-filter">
+                    <button type="button" class="header__item-page">Інтерактив</button>
+                    <button type="button" class="header__item-btn">
+                        <svg class="header__open--icon">
+                            <use href="/JS-Coding-Magic/assets/symbol-defs-fddf63b7.svg#arrow-down" class="icon-header__list"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+                  <div class="visible header-pages-div" data-menu>
+                <ul class="list-pages">
+                    <li class="item-pages">Числовий</li>
+                    <li class="item-pages">Ігровий</li>
+                    <li class="item-pages">Ознайомчий</li>
+                </ul>
+            </div>
+            </li>
+          
+            <li class="header__list-item">
+                <a href="" class="header__item-page">Наша команда</a>
+            </li>
+            <li class="header__list-item">
+                <a href="" class="header__item-page">Контакти</a>
+            </li>
+        </ul>
+
+        <div class="header-hiUser">
+            <button type="button" class="header-hiUser-btn" data-sunMoon>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG7SURBVHgBhVM960FhFD8MShSDzIwGUr6AWXmZLbJK8Q3IKmGwWFiFKB8AG+VtVYrF5H2wIOf/nFP3uvfv4tTTved5zsvvd1501+sVC4UCuN1uiEQioJTNZsPH7/e/3WezWTCZTAD5fB7n8zlqiTBCq9WKp9NJ8z2VSiHU63VW7vc7djod2fjxeGA4HEaRHavVquzU7/dxMpnIOkg/5GixWNBsNuNwOGS90WhgrVbD6XSKz+cTo9EoCgaYTCbfA5AEg0Esl8tYKpUYOhlLh9CMx2N0uVy4XC61A1BWyqh0VB6v14vH41Hp8gqw3+85gMPh+BiATrvdVhVdTy2Jx+Ngs9ngdrtxi75Jr9eDZrMJTqcTut0u6AVXQsGP5/MZfonRaASDwcD/l8sFZArr9ZopeDyerxSo7avV6nMRaRY+OVN9/g+VXgkvkUjAdruFYrEIwlgFncZZBAefzwez2ez1IEXa7Xachfo/Go3wcDgwGmor6SShUIhtMpnMiwIZSfBbrZYMkb6BQIBHme4lWSwW6lHO5XJfl4l4U4G1hJZJR+tcqVTAbrdDLBZT8aa2DgaDtzWn+3Q6DWJv4A+Z4U1fZRK7TgAAAABJRU5ErkJggg==" class="img-sun" data-sun>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgBnVPLEURAEO2VAAmokgECoGSACNw5unEVgAwIw00KXFyF4KSKU+/0bO3u7A6LfVWv1LTpnv49iOMYVVVFAHhR0zRO0fbNPM9xnmcE0dkwDCzLEqdpQsdxfgYgpmlK38fB8zzuSKiq6tBZ4OPlpzPB9/1rAcZxRBGWZZ0OoARBACwD+BcKq10ybtl2A5imKRnDMISzUNZ1lYyu60JRFHAKNPc90D9d16XG0cip8bRsNzq0bbv7wLIs0DQN9H0PzAGoZOpR13Vg2za/g8Mw4FVEUfTeA5q7uEhHoNJAXCSxriPUdf0ptG8x0YUtsD6JaXNmWYaQJIkk52dGbEs5KTBsKJHkfAcc2pR6rQnv1gAAAABJRU5ErkJggg==" class="img-moon" data-moon>
+            </button>
+            <p class="header__hiUser-text">Вітаємо, User!</p>
+        </div>
+    </nav>
+</header>
+
+<div class="backdrop-header  js-backdrop">
+    <div class="modal-header ">
+        <button type="" class="close-modal-header" data-close-header>
+            <svg class="header__close--icon">
+                <use href="/JS-Coding-Magic/assets/symbol-defs-fddf63b7.svg#cross" class="icon-modal"></use>
+            </svg>
+        </button>
+        <p class="modal-text-header"><br class="modal-text-hi">Привіт!<br>
+            Ви потрапили на сайт інтерактивних ігор та завдань
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+            Бажаємо Вам гарно провести час!</p>
+        <p class="modal-text-name">Введіть своє ім’я:</p>
+        <input type="text" class="modal__header--comment" placeholder="Ваше ім’я..." />
+        <button type="" class="modal__header--button" data-close-modal>Зберегти</button>
+        <div class="modal__image-list">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFXSURBVHgB5dO9SgNBFAXgI9hotW/giI2Cou+iWAk+gU1SWYnY2InRwlJSWGkvRhCfQRA7N40oxF5s9Ay5g9dhxyzZmwWTAwf2j/l2dmeAScsU7OPY7cS9c7brD6Zhj96xn+yLur7GZnK8D+M49pm9ZWfV9V32i/1g92AcNwBtoP8lTGGXQBsKhTXsSqKmsBO0UwKdYZ8sYIfyM/XovTw/hxrRm3+FLrMbERr/U71lNNqpgvZk0CMM3qcaHXqmTtATdkcGf0QNC2mFzdlTOQ948w80g9HqTeFXCdRk9YZsCRLj1+oZsy0Tssq+shf4PfOwoJqjQJcEbcm5/+y9AvzBGn1TKCL8MMIPYJB4pnHaKP7n66iIFs00pCUvtYmfz+73ec4uYMhkgrYT948FXZTzecFz9H9Bpfi3fy8YKEZDHAxQjXfVgGcJdCQJ+GWdqMZrR0MyjGO+AZAEh6WOWsS6AAAAAElFTkSuQmCC" alt="1" class="modal__header-img1" data-color>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIISURBVHgB5ZbNK+VRGMe/18yoqZlhZjfNTHOXU/PS1Lw0TVMzDZGNl1KUBSJ2iq2FhcjOnyALCxZ2ykJYiCIhYcklkiSEvBS+T8+5XD/n4pzrrXzrU/c+v/P7Pec853mec4DrVQbpJ5tkmOThFlREZsk/8orkm//puGFNW5z8JYO4YR1ZbKE4djyGnz6QPwHbFvmNsyv8RHZJeWDsmq/jApJNxmJs7WQxMC6JtJFfAXsZPFVn8NVREu5I987xS9IIrcMJ0kJSA2O+khqShatJ3q8kFRc57iVPyX9STCLQjhQyz5fMh96TBjKJ8xOLVRUZJz+gDWbBNiiHdFvsfdCWaFMzNCo2hcm8meSJbCv+TEYtdqnPn7CrieTGeVZIeqBRO5HUcSnOhkmKPsXyge9knVQH7J1kjyTDLulcG0HjI2gTmDHOBOlAAzi/6jfmIykxZJJn5Jt5r8PiWKIqEZGt2I4ao700BDdJwqWR1+QL2YEmTSTO+Fpo22wlT2TCvnUcJu+gmVoPLa3IBeMl8yU6srXiUyJkPz0u0Z21zFQkKFfHb8kQKUGCck0uycw56J1KMnUffkp2dbwCzeJl8gL+2nO9CEgpHJjfm0hArns8Aj2REpZrqMPQw0ImMEU+ki5oY3CS64rnoEdbl3n3uZmMs3wue6s4XaF3E3l4dy4J9SH8+nVUXuE+BplXYJVbIYrTAAAAAElFTkSuQmCC" alt="2" class="modal__header-img2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGeSURBVHgB5Ve9SgQxEB5/QDlBVrRU18JH0FZBbO2s9QEsvAfwEHyB8wlESxuxsbKw8wFEBC2U09LTE0FthPMbdsLGuFFzO7nmPvjY3UkmX5JJZhOiDJtgC2xH5j24xYJ9YA3ckQ480f8xXsKnStIL7s0ChYF93igMi+LXMg00KRydCJNotQetRjQwAW6Ac+AAeAge+Cqz6COFwx3xDHhHPxeUK9wUu5rwvthOwRVw3erIWizhYet7yqqzKvYjV7ifdDAizw/wwbKbAY25DlrCvJfPKdun22JLSJIFcFLkpBVjs0fNPjWZkOOcWvXUFxdjGbyWsk/KFlrq1IkibDAKVjxl3xKINl7/qsA/Ca2sFQR7xO8UhkpJvygx/g2qCSQYPmGOfWJ9D1GenaIK74E34Dxl+/AKvHQ6UxpFMa6K/Rm8lfeLAr+OY+wTZuxSngJZNNUU9k31NLhkfU+S8jQzikZ8TPlI65RPe+L4lT5zuTiThjnWDfAFnJWnGnorgTDMD7ubB/oGZyiOY10KunWFqRkDn43MVSYmeXb5gkhfOonLkl21OtQAAAAASUVORK5CYII=" alt="3" class="modal__header-img3">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJcSURBVHgBxZe7axVBFMY/Y8RKtBHUxiioIGLiMyLqH2AjQUUhSKJiYaVYKYJJY61VsJEELGxExUK0kIAgKCo+kKDXR8z7USRFUoWQ5DvMWe7JZPbenU1u8sGPe+ax++3M7hzOBYAa0klmK8RXshWeqsgz8oasqhBPSQcCmtXfAmkm58kf7fuh7RidM6vt9jyCxpXUAo/qtIHl0IqsuAorpCzGh8kHr0+Ox1+NP+ucaJXa6mNwX+Y+r/8aadd4P+kh9Yj0SDM+nmIK7a8x7YNlzDMbHyph2kTeBfpl5f/12rIeae94Wn/XBsaukrZA/xo1mEJGpW21rLYfbhsT7UQxG1nVa38tIjxKfVy+uXxQV7w5tWp6tMR9cqXMA+SbxnKENnnjvUhf6aKMl0JLkrnWkdtkQG/4j9xFMe8n2kBayKi2Zd6tZLAacZIHfUuGyUm4V7CL3CQfyXMzt4F8gUtCBZ0nxp/IESBuq++Qx6bdaOIHaiSr/IViZhOdNfErvU+UsZQxdaZtr92txqLXmF/uFEwsJ2TQv7icZshquKrE1lWNKfMvkN8ad5EzMA8cYyxzt3vtLOoy8Y68xg9N+6KJpdb6rrG842YzdsnE7chpLAVgG/LpEdxJyGUs57jB63+JcE19z5t3mqzXMYyTzchu7KsJbotDOaETxQ9q3n2k4L4OV1F0oLxa4Yr0RBJLRnpPfgbm1yl7yYQ1lkx0n1xGNk3CpcJEN0hfiqlIzvWIzluUZOtaND5BxhD4X+RpGxkie+AKi1byBJHaQl7AvWtJ/qcyXifzuvU6efiNc6Hzsuy68iwFAAAAAElFTkSuQmCC" alt="4" class="modal__header-img4">
+        </div>
+    </div>
+</div>
+    <main>
+      <div class="container">
+        <h2>Популярні інтерактивні ігри</h1>
+        <section>
+    <div class="line"></div>
+    <h3 class="cheack__year-title">Перевір в який рік ти народився</h3>
+    <div class="cheack__year-div">
+        <div class="check-div">
+            <input class="check-year-input" type="number" placeholder="Введіть рік народження" data-inputYear>
+
+            <button type="button" class="chaeck-year-btn" data-btnYear>
+                <svg class="chaeck-year-svg">
+                    <use href="../img/symbol-defs.svg#magnifying-glass"></use>
+                </svg>
+            </button>
+        </div>
+        <p class="check__year-text" data-remove>Введіть рік</p>
+    </div>
+
+</section>
+        <section >
+    <div class="line"></div>
+    <h3>Вгадай число, яке загадав комп’ютер</h3>
+    <div class="section-quess-number">
+        <div class="number-quest-input-block">
+            <input type="number" placeholder="Введіть число" id="counter-quest-number">
+
+            <button id="update-btn-quest-number">
+                <svg>
+                    <use href="../img/symbol-defs.svg#magnifying-glass"></use>
+                </svg>
+            </button>
+
+
+            
+        </div>
+        
+        <p id="number-counter">play to game</p>
+
+
+    </div>
+</section>
+        <section>
+  <div class="line"></div>
+  <h3>Камінь - ножиці - папір</h3>
+  <div class="section-roock-paper-scissors">
+      <div class="roock-paper-scissors-block">
+        
+
+        <button class="update-btn-roock-paper-scissors" id="update-btn-roock-paper-scissors1">
+          <img src="../img/rock.png" alt="камінь" >
+        </button>
+
+
+        <button class="update-btn-roock-paper-scissors" id="update-btn-roock-paper-scissors2">
+          <img src="../img/sosikalus.png" alt="папір" >
+        </button>
+        
+
+        <button class="update-btn-roock-paper-scissors" id="update-btn-roock-paper-scissors3">
+          <img src="../img/papirus.png" alt="нажниці" >
+        </button>
+      </div>
+
+
+    
+
+    <div class="rock-papirus-sosikarios-text">
+      <p id="rock-conteiner">Рахунок:</p>
+      <p id="comp-win-conteiner">Комп’ютер - 0</p>
+      <p id="user-win-conteiner">Ви - 0</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="rock-papirus-sosikarios-text-win-loose-div" >
+    <p id="text" class="rock-papirus-sosikarios-text-win-loose">play to game</p>
+</div>
+
+
+<div>
+    <button id="button" class="comp-btn-roock-paper-scissors" >
+        <!-- Варіант комп’ютера -->
+        <img class="button-img-upd" id="button-img" src="" alt="">
+      </button>
+</div>
+
+
+</section>
+
+        <section >
+    <div class="line"></div>
+    <h3>Калькулятор</h3>
+    <div class="section-calkulator">
+
+        
+    <input class="calculator-field" type="number" placeholder="Введіть число" id="counter-calkulator1">
+    
+        <ul class="calkulator-list">
+            <li class="calkulator-item">
+                <button id="plus-button" class="update-btn-calkulator">
+                    +
+                </button>
+            </li>
+            <li class="calkulator-item">
+                <button id="plus-umltiplate" class="update-btn-calkulator">
+                    *
+                </button>
+            </li>
+
+            <li class="calkulator-item">
+                <button id="plus-minus" class="update-btn-calkulator">
+                    -
+                </button>
+            </li>
+            <li class="calkulator-item">
+                <button id="plus-divadet" class="update-btn-calkulator">
+                    \
+                </button>
+            </li>
+        </ul>
+    
+    <input class="calculator-field" type="number" placeholder="Введіть число" id="counter-calkulator2">
+    <button id="button-equal" class="update-btn-calkulator">
+        =
+    </button>
+    <p id="text-redult" class="calculator-field">Результат</p>
+</div>
+</section>
+        <section class="time-calculator">
+    <div class="line"></div>
+    <h3>Калькулятор часу</h3>
+    <div class="time-calculator-block">
+        <div class="time-calculator-input-block">
+            <input type="number" placeholder="Введіть число" id="counter">
+            <button id="update-btn">
+                <svg>
+                    <use href="../img/symbol-defs.svg#magnifying-glass"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="time-calculator-line"></div>
+        <p id="time-counter">0дн. 00:00</p>
+    </div>
+</section>
+        <section class="dinosaur">
+  <div class="line"></div>
+  <h3>Google динозавр</h3>
+  <canvas width="600px" height="200px" id="canvas"></canvas>
+  <div class="game-over">
+    <p>Game Over!</p>
+    <button class="try-again">Try again</button>
+  </div>
+  <button class="start-btn" data-start>Start!</button>
+  <img style="display: none;" src="../img/dinosaur.png" id="dino">
+  <img style="display: none;" src="../img/cactus.png" id="cactus">
+</section>
+        <section>
+    <div class="line"></div>
+    <h3>Футбол</h3>
+    <div class="field">
+        <div class="ball"></div>
+    </div>
+</section>
+        <section>
+    <div class="line"></div>
+    <h3>Введіть 3 числа</h3>
+    <div class="section-calkulatorr">
+<div class="input-list">
+    <input class="max-numbe-fielrd" type="number" placeholder="Введіть число" id="counter-max-number1">
+    <input class="max-numbe-fielrd" type="number" placeholder="Введіть число" id="counter-max-number2">
+    <input class="max-numbe-fielrd" type="number" placeholder="Введіть число" id="counter-max-number3">
+    
+</div>
+    <p id="text-redult-max" class="result-max-number">tupe number in input</p>
+</div>
+
+</section>
+        <section class="our-team">
+    <div class="line"></div>
+    <h3>Наша команда</h3>
+    <div class="our-team-block">
+        <img src="../img/avatar.png" alt="img" class="our-team-img">
+        <h4 data-name>Ім'я студента</h4>
+        <p data-description>Інформація про роботу яку він виконав</p>
+        <ul>
+            <li class="part"></li>
+            <li class="part"></li>
+            <li class="part"></li>
+        </ul>
+        <button class="our-team-btn" data-right></button>
+        <button class="our-team-btn" data-left></button>
+    </div>
+</section>
+        <section>
+    <div class="line"></div>
+    <h3>Обери вченого/их</h3>
+    <ul class="scientists">
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+        <li class="scientist"></li>
+    </ul>
+    <div class="sort-list">
+        <ul>
+            <li><button class="sort-list-item">Які вчені народилися в 19 ст.</button></li>
+            <li><button class="sort-list-item">Відсортувати вчених за алфавітом</button></li>
+            <li><button class="sort-list-item">Відсортувати вчених за кількістю прожитих років</button></li>
+            <li><button class="sort-list-item">Знайти вченого, який народився найпізніше</button></li>
+        </ul>
+        <ul>
+            <li><button class="sort-list-item">Знайти рік народження Albert Einshtein</button></li>
+            <li><button class="sort-list-item">Знайти вчених, прізвища яких починаються на на літеру “С”</button></li>
+            <li><button class="sort-list-item">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
+            <li><button class="sort-list-item">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</button></li>
+        </ul>
+        
+    </div>
+    <p><button class="sort-list-item">Знайти вчених, в яких співпадають перші літери імені і прізвища</button></p>
+</section>
+      </div>
+      
+    </main>
+    <footer>
+    <a href="" class="footer-page">
+        <svg class="footer__logo--icon">
+            <use href="/JS-Coding-Magic/assets/symbol-defs-fddf63b7.svg#icon-footer" class="icon-footer"></use>
+        </svg>
+    </a>
+    <ul class="footer__list">
+        <li class="footer__list-item">
+            <p class="footer__item-text">Тел: +38 (123) 456 78 90</p>
+        </li>
+        <li class="footer__list-item">
+            <p class="footer__item-text">E-Mail: codingmagic@gmail.com</p>
+        </li>
+        <li class="footer__list-item">
+            <p class="footer__item-text">Facebook: CodingMagic</p>
+        </li>
+        <li class="footer__list-item">
+            <p class="footer__item-text"> Twitter: CodingMagic</p>
+        </li>
+        <li class="footer__list-item">
+            <p class="footer__item-text">Instagram: CodingMagic</p>
+        </li>
+    </ul>
+
+
+    <div class="mail__footer--div">
+        <input type="text" class="mail__div--comment" placeholder="Ваша ел. адреса..." />
+        <button type="button" class="mail__div--button" data-open>Підписатися</button>
+        <p class="mail__div--text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+    </div>
+</footer>
+<div class="backdrop  js-backdrop" >
+    <div class="modal">
+        <button type="button" class="close-modal" data-close>
+            <svg class="footer__close--icon">
+                <use href="/JS-Coding-Magic/assets/symbol-defs-fddf63b7.svg#cross" class="icon-modal"></use>
+            </svg>
+        </button>
+        <p class="modal-text">Дякую за підписку!</p>
+        <div class="modal__image-list">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFXSURBVHgB5dO9SgNBFAXgI9hotW/giI2Cou+iWAk+gU1SWYnY2InRwlJSWGkvRhCfQRA7N40oxF5s9Ay5g9dhxyzZmwWTAwf2j/l2dmeAScsU7OPY7cS9c7brD6Zhj96xn+yLur7GZnK8D+M49pm9ZWfV9V32i/1g92AcNwBtoP8lTGGXQBsKhTXsSqKmsBO0UwKdYZ8sYIfyM/XovTw/hxrRm3+FLrMbERr/U71lNNqpgvZk0CMM3qcaHXqmTtATdkcGf0QNC2mFzdlTOQ948w80g9HqTeFXCdRk9YZsCRLj1+oZsy0Tssq+shf4PfOwoJqjQJcEbcm5/+y9AvzBGn1TKCL8MMIPYJB4pnHaKP7n66iIFs00pCUvtYmfz+73ec4uYMhkgrYT948FXZTzecFz9H9Bpfi3fy8YKEZDHAxQjXfVgGcJdCQJ+GWdqMZrR0MyjGO+AZAEh6WOWsS6AAAAAElFTkSuQmCC" alt="1" class="modal-img1">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIISURBVHgB5ZbNK+VRGMe/18yoqZlhZjfNTHOXU/PS1Lw0TVMzDZGNl1KUBSJ2iq2FhcjOnyALCxZ2ykJYiCIhYcklkiSEvBS+T8+5XD/n4pzrrXzrU/c+v/P7Pec853mec4DrVQbpJ5tkmOThFlREZsk/8orkm//puGFNW5z8JYO4YR1ZbKE4djyGnz6QPwHbFvmNsyv8RHZJeWDsmq/jApJNxmJs7WQxMC6JtJFfAXsZPFVn8NVREu5I987xS9IIrcMJ0kJSA2O+khqShatJ3q8kFRc57iVPyX9STCLQjhQyz5fMh96TBjKJ8xOLVRUZJz+gDWbBNiiHdFvsfdCWaFMzNCo2hcm8meSJbCv+TEYtdqnPn7CrieTGeVZIeqBRO5HUcSnOhkmKPsXyge9knVQH7J1kjyTDLulcG0HjI2gTmDHOBOlAAzi/6jfmIykxZJJn5Jt5r8PiWKIqEZGt2I4ao700BDdJwqWR1+QL2YEmTSTO+Fpo22wlT2TCvnUcJu+gmVoPLa3IBeMl8yU6srXiUyJkPz0u0Z21zFQkKFfHb8kQKUGCck0uycw56J1KMnUffkp2dbwCzeJl8gL+2nO9CEgpHJjfm0hArns8Aj2REpZrqMPQw0ImMEU+ki5oY3CS64rnoEdbl3n3uZmMs3wue6s4XaF3E3l4dy4J9SH8+nVUXuE+BplXYJVbIYrTAAAAAElFTkSuQmCC" alt="2" class="modal-img2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGeSURBVHgB5Ve9SgQxEB5/QDlBVrRU18JH0FZBbO2s9QEsvAfwEHyB8wlESxuxsbKw8wFEBC2U09LTE0FthPMbdsLGuFFzO7nmPvjY3UkmX5JJZhOiDJtgC2xH5j24xYJ9YA3ckQ480f8xXsKnStIL7s0ChYF93igMi+LXMg00KRydCJNotQetRjQwAW6Ac+AAeAge+Cqz6COFwx3xDHhHPxeUK9wUu5rwvthOwRVw3erIWizhYet7yqqzKvYjV7ifdDAizw/wwbKbAY25DlrCvJfPKdun22JLSJIFcFLkpBVjs0fNPjWZkOOcWvXUFxdjGbyWsk/KFlrq1IkibDAKVjxl3xKINl7/qsA/Ca2sFQR7xO8UhkpJvygx/g2qCSQYPmGOfWJ9D1GenaIK74E34Dxl+/AKvHQ6UxpFMa6K/Rm8lfeLAr+OY+wTZuxSngJZNNUU9k31NLhkfU+S8jQzikZ8TPlI65RPe+L4lT5zuTiThjnWDfAFnJWnGnorgTDMD7ubB/oGZyiOY10KunWFqRkDn43MVSYmeXb5gkhfOonLkl21OtQAAAAASUVORK5CYII=" alt="3" class="modal-img3">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJcSURBVHgBxZe7axVBFMY/Y8RKtBHUxiioIGLiMyLqH2AjQUUhSKJiYaVYKYJJY61VsJEELGxExUK0kIAgKCo+kKDXR8z7USRFUoWQ5DvMWe7JZPbenU1u8sGPe+ax++3M7hzOBYAa0klmK8RXshWeqsgz8oasqhBPSQcCmtXfAmkm58kf7fuh7RidM6vt9jyCxpXUAo/qtIHl0IqsuAorpCzGh8kHr0+Ox1+NP+ucaJXa6mNwX+Y+r/8aadd4P+kh9Yj0SDM+nmIK7a8x7YNlzDMbHyph2kTeBfpl5f/12rIeae94Wn/XBsaukrZA/xo1mEJGpW21rLYfbhsT7UQxG1nVa38tIjxKfVy+uXxQV7w5tWp6tMR9cqXMA+SbxnKENnnjvUhf6aKMl0JLkrnWkdtkQG/4j9xFMe8n2kBayKi2Zd6tZLAacZIHfUuGyUm4V7CL3CQfyXMzt4F8gUtCBZ0nxp/IESBuq++Qx6bdaOIHaiSr/IViZhOdNfErvU+UsZQxdaZtr92txqLXmF/uFEwsJ2TQv7icZshquKrE1lWNKfMvkN8ad5EzMA8cYyxzt3vtLOoy8Y68xg9N+6KJpdb6rrG842YzdsnE7chpLAVgG/LpEdxJyGUs57jB63+JcE19z5t3mqzXMYyTzchu7KsJbotDOaETxQ9q3n2k4L4OV1F0oLxa4Yr0RBJLRnpPfgbm1yl7yYQ1lkx0n1xGNk3CpcJEN0hfiqlIzvWIzluUZOtaND5BxhD4X+RpGxkie+AKi1byBJHaQl7AvWtJ/qcyXifzuvU6efiNc6Hzsuy68iwFAAAAAElFTkSuQmCC" alt="4" class="modal-img4">
+        </div>
+    </div>
+</div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  </body>
+</html>

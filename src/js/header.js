@@ -23,16 +23,59 @@ const sun = document.querySelector("[data-sun]")
 const sunMoon = document.querySelector("[data-sunMoon]");
 const moon = document.querySelector("[data-moon]");
 
+const foooter = document.querySelector("footer");
+const header = document.querySelector("header");
+const main = document.querySelector(".container");
+const bio = document.querySelector("body");
+const headerLogo = document.querySelector(".header__logo--icon");
+const footerLogo = document.querySelector(".footer__logo--icon");
+const headerIconDown = document.querySelector(".icon-header__list");
+const headerPage = document.querySelectorAll(".header__item-page");
+
+
+
+
 moon.addEventListener("click", () => {
     moon.style.display = "none";
     sun.style.display = "block";
+
+
+
+    headerPage.style.color = "black";
+    footerLogo.style.fill = "black";
+    headerIconDown.style.fill = "black";
+    foooter.style.backgroundColor = "white";
+    header.style.backgroundColor = "white";
+    main.style.backgroundColor = "white";
+    headerLogo.style.fill = "black";
+    textUsir.style.color = "black";
+    menu.style.backgroundColor = " rgb(247, 247, 247)";
+    bio.style.color = "black";
+    headerPage.forEach((el) => {
+        el.style.color = "black";
+    });
 });
 
 
 sun.addEventListener("click", () => {
     sun.style.display = "none";
     moon.style.display = "block";
+
+
+    footerLogo.style.fill = "white";
+    headerLogo.style.fill = "white";
+    bio.style.color = "white";
+    textUsir.style.color = "white";
+    headerIconDown.style.fill = "white";
+    menu.style.backgroundColor = "#adacac";
+    foooter.style.backgroundColor = "#adacac";
+    header.style.backgroundColor = "#adacac";
+    main.style.backgroundColor = "#adacac";
+    headerPage.forEach((el) => {
+        el.style.color = "white";
+    });
 });
+
 
 btnMenu.addEventListener("click", () => {
     menu.classList.toggle("visible");

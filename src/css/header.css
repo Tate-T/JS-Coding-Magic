@@ -1,6 +1,7 @@
 header {
     display: flex;
-    margin-left: 100px;
+   padding-left: 60px;
+   
 }
 
 /* logo */
@@ -18,15 +19,16 @@ header {
 
 /* navigation */
 
+
+
 .header__item-page {
+ 
     color: #000;
     background-color: transparent;
     border: none;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  
 }
 
 .header__list-item {
@@ -83,7 +85,7 @@ header {
 
 .header-hiUser {
     margin-top: 30px;
-    margin-left: 200px;
+    margin-left: 600px;
     display: flex;
     margin-bottom: 32px;
 
